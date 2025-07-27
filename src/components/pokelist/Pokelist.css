@@ -1,4 +1,10 @@
 @import "tailwindcss";
+
 .card-holder {
-    @apply flex flex-row gap-4 flex-wrap;
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 justify-items-center;
+}
+
+
+.poke-list {
+  @apply min-h-screen bg-gradient-to-b from-white via-yellow-100 to-pink-50 py-10 max-w-screen-xl mx-auto;
 }

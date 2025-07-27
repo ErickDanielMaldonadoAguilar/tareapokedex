@@ -1,26 +1,30 @@
 @import "tailwindcss";
+
 .card {
-    @apply border max-w-64;
+  @apply flex flex-col justify-between items-center border-4 border-yellow-400 rounded-xl w-64 h-72 bg-gradient-to-br from-yellow-100 via-white to-pink-100 shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl;
 }
 
+
 .card-header {
-    @apply relative;
+  @apply mt-3;
 }
 
 .card-header img {
-    @apply w-full h-full object-cover;
+  @apply w-full h-24 object-contain;
 }
 
-.card-header h1 {
-    @apply absolute -translate-1/2 top-1/2 left-1/2 text-white;
+.card-name h1 {
+  @apply text-xs font-bold text-indigo-800 text-center capitalize;
 }
+
 .card-body {
-    @apply px-3 py-2;
+  @apply px-4 py-1 text-center;
 }
 
 .card-footer {
-    @apply mt-2 flex flex-row flex-wrap;
+  @apply mb-3 flex justify-center;
 }
-.card-footer button{
-    @apply bg-indigo-400 text-white py-2 px-3 rounded shadow flex-1;
+
+.card-footer button {
+  @apply bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full transition-transform hover:scale-105 shadow;
 }
